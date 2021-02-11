@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* //Rest parameters are always last parameter in function definition
+        function addition(a,b,...c) //Rest Parameters
+        {
+            console.log(a,b,c)
+           
+        }
+        addition(10+20,40,60,104,103,49,500,20,134)
+*/
+
+       function addition(a,b,c,d,e,f,g)  //spread syntax
+       {
+           console.log(a,b,c,d,e,f)
+       }
+       let arr=[100,200,300,300,500]
+       addition(60,70,...arr)
+        
+    </script>
+</body>
+</html>
