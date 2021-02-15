@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    var h1= document.createElement("h1").innerText="Drinks:"
+     var ul=document.createElement("UL")
+ul.setAttribute("id", "drinks")
+document.body.appendChild(ul) 
+
+var li=document.createElement("LI")
+var text1=document.createTextNode("Coffee")
+li.append(text1)
+
+var li2=document.createElement("LI")
+var text2=document.createTextNode("Tea")
+li2.append(text2)
+
+var li3=document.createElement("LI")
+var text3=document.createTextNode("Water")
+li3.append(text3)
+ul.append(h1)
+ul.append(li)
+ul.append(li2)
+ul.append(li3)
+
+    </script>
+</body>
+</html>
