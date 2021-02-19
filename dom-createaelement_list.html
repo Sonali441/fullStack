@@ -7,11 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="myFunction()">Try it</button>
-
+    
     <script>
- function  myFunction()  {
-   
      var ul=document.createElement("UL")
 ul.setAttribute("id", "drinks")
 document.body.appendChild(ul) 
@@ -19,8 +16,8 @@ document.body.appendChild(ul)
 var li=document.createElement("LI")
 var text1=document.createTextNode("Coffee")
 li.append(text1)
-document.getElementById("drinks").appendchild(li)
-/*var li2=document.createElement("LI")
+
+var li2=document.createElement("LI")
 var text2=document.createTextNode("Tea")
 li2.append(text2)
 
@@ -31,8 +28,7 @@ ul.append(h1)
 ul.append(li)
 ul.append(li2)
 ul.append(li3)
-document.getElementById("drinks").append(li3)*/
-}
+
     </script>
 </body>
 </html>
