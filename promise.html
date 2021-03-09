@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=15
+        let Eligible=false
+        let promise =new Promise(function(resolve,reject){
+            if(age>=18){
+              Eligible=true
+              resolve(Eligible)
+            }
+            else{
+                reject("Not Eligible")
+            }
+        })
+
+        //consuming the promise
+        promise.then(function(){
+            let status
+            if (Eligible){
+                status="waiting"
+            }
+            return status
+        })
+        .then(function(status){
+            console.log(status)
+        })
+
+        .catch(function(err){
+            console.log(err)
+        })
+
+         //async await
+
+         async function Age(){
+            let Age = 15
+            let p =new Promise(function(resolve,reject){
+                setTimeout(resolve(Age), 2000);
+            })
+
+            let output = await p;
+            console.log(output+2)
+        }
+        Age()
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      function add(a,b,display){
+          let c= a+b
+          display (c,show)
+      }
+       add(20,30,display)
+
+      function display(c,show){
+          let result= c+20
+          show( result,fun)
+      }
+
+function show(result,fun){
+    console.log(result)
+    fun()
+}
+
+function fun(){
+    console.log("Inside function")
+}
+  </script>  
+</body>
+</html>

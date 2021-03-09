@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="id" placeholder="Enter id"><br><br>
+        <input type="text" id="title" placeholder="Enter title"><br><br>
+        <input type="number" id="userid" placeholder="Enter userId"><br><br>
+        <lable>Slect Gender:</lable>
+        <input type="radio"  id="male" name="gender" value="male" >
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <input type="checkbox" id="status" value='Completed'>
+        <label for="status">Completed</label><br><br>
+        <button type="button" id="btn">Send Data</button><br><br>
+        <button type="button">Get Data</button><br><br>
+
+    </form>
+
+    <script>
+        document.getElementById("btn").addEventListener('click',getData)
+        function getData(){
+        let Id =  document.getElementById("id").value
+        let title = document.getElementById("title").value
+        let userId=document.getElementById("userid").value
+        let status
+        if(check){
+            status = document.getElementById("status").value
+        }else{
+            status = document.getElementById("status").value="Not Completed"
+        }
+        console.log(Id,title,userId,radio,status)
+        }
+    </script>
+</body>
+</html>

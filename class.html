@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       class Person{
+           constructor(firstName,city){
+               this.firstName=firstName
+               this.city=city
+           }
+           getPersonInfo(){
+               console.log(this.firstName+ "and"+this.city)
+           }
+
+       }
+
+       class Employee extends Person
+       {
+           constructor(firstName,city,technology){
+               super(firstName,city)
+                this.technology=technology
+           }
+           getEmpInfo(){
+               console.log(this.firstName,this.technology)
+           }
+       }
+       let abc=new Employee("ABC","Pune","java")
+       abc.getEmpInfo()
+    </script>
+</body>
+</html>
