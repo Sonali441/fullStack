@@ -42,9 +42,9 @@ function getUserData() {
 
   function getData(){
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://jsonplaceholder.typicode.com/posts");
+    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
     xhr.setRequestHeader("Content-type", "application/json");
-    
+    xhr.send()
   
     xhr.onload = function () {
       if (xhr.status == 200) {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Destructure"
+        let[x,y,z,w]=str  
+        console.log(x,y,z,w)
+
+        let numbers=[100,300,4000,59,90,60,46]
+        let[a,b,,c,...d]=numbers
+        console.log(a,b,c,d)
+        let[...copyarr] =numbers
+        console.log(copyarr)
+        let person={
+            firstName:"ABC",
+            salary:10000,
+            city:"Pune",
+            lastName:"XYZ",
+
+        }
+
+        let{firstName,...rest}=person
+        console.log(firstName,rest)
+
+        function exp(){
+            return [10,50,60,40]
+        }
+
+       let[num1,num2,num3,num4]= exp()
+       console.log(num1,num2,num3,num4)
+
+    </script>
+</body>
+</html>
